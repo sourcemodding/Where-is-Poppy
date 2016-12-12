@@ -5,6 +5,9 @@
 # Art Folder
 /Assets/Concept Art/
 
+# Release Candiadates are stored locally as zip files
+*.zip
+
 # Jackhammer Intermediate Files
 *.ext
 *.log
