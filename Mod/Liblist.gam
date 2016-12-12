@@ -1,0 +1,12 @@
+// Where is Poppy Liblist.gam
+// 19.09.2015
+// Cathal McNally
+ 
+game "Where is Poppy Rel"
+icon "wip_icon"
+startmap "poppy_map01"
+mpentity "info_player_deathmatch"
+gamedll "dlls\wip.dll"
+cldll “1”
+secure "1"
+type "singleplayer_only"

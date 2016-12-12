@@ -1,3 +1,16 @@
+###########################
+# Where is Poppy Specific #
+###########################
+
+# Art Folder
+/Assets/Concept Art/
+
+# Jackhammer Intermediate Files
+*.ext
+*.log
+*.prt
+*.wa_
+
 # Compiled Object files
 *.slo
 *.lo
@@ -11,16 +24,11 @@
 # Compiled Dynamic libraries
 *.so
 *.dylib
-*.dll
-
-# Fortran module files
-*.mod
 
 # Compiled Static libraries
 *.lai
 *.la
 *.a
-*.lib
 
 # Executables
 *.exe
