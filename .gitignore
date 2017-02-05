@@ -88,3 +88,20 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+*.tlog
+*.idb
+Source Code/projects/vs2010/Debug/hldll/int/vc120.pdb
+*.suo
+Source Code/projects/vs2010/steam_appid.txt
+Source Code/projects/vs2010/Debug/hldll/wip.dll
+*.exp
+Source Code/projects/vs2010/Debug/hldll/wip.ilk
+Source Code/projects/vs2010/Debug/hldll/wip.lib
+Source Code/projects/vs2010/Debug/hl_cdll/client.dll
+Source Code/projects/vs2010/Debug/hl_cdll/client.ilk
+Source Code/projects/vs2010/Debug/hl_cdll/client.pdb
+*.user
+*.sdf
+Source Code/projects/vs2010/Debug/hl_cdll/int/vc120.pdb
+Source Code/projects/vs2010/Debug/hldll/wip.pdb
+Source Code/projects/vs2010/Debug/hl_cdll/client.lib

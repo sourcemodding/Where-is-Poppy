@@ -550,6 +550,18 @@ void CStudioModelRenderer::StudioSetUpTransform (int trivial_accept)
 	(*m_protationmatrix)[0][3] = modelpos[0];
 	(*m_protationmatrix)[1][3] = modelpos[1];
 	(*m_protationmatrix)[2][3] = modelpos[2];
+
+	// Foo Modify model scale.
+	if (m_pCurrentEntity->curstate.scale != 0 && m_pCurrentEntity->curstate.scale != 1.0)
+	{
+		for (int i = 0; i < 3; i++)
+		{
+			for (int j = 0; j < 3; j++)
+			{
+				(*m_protationmatrix)[i][j] *= m_pCurrentEntity->curstate.scale;
+			}
+		}
+	}
 }
 
 
@@ -2088,6 +2100,12 @@ void CStudioModelRenderer::StudioRenderFinal_Hardware( void )
 		gEngfuncs.pTriAPI->RenderMode( kRenderTransAdd );
 		IEngineStudio.StudioDrawHulls( );
 		gEngfuncs.pTriAPI->RenderMode( kRenderNormal );
+	}
+
+	// foo Lets add bounding boxes to the OpenGL Renderer too!
+	if (m_pCvarDrawEntities->value == 5)
+	{
+		IEngineStudio.StudioDrawAbsBBox();
 	}
 
 	IEngineStudio.RestoreRenderer();

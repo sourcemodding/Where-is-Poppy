@@ -1,0 +1,32 @@
+// Where is Poppy Forge Game Data
+// Cathal McNally
+// sourcemodding@gmail.com
+// www.sourcemodding.com
+
+// February 2017
+
+// wip_StaticMesh
+
+@PointClass color(0 255 0) size(-20 -20 -20, 20 20 20) studio() = wip_StaticMesh : "wip_StaticMesh"
+[
+	animate(integer) : "Animation Sequence (Game)" : 0 : "Setting an in game Animation Sequence for the selected model"
+	sequence(integer) : "Animation Sequence (Editor)" : 0 : "Sequence to display in Jackhammer. This does not affect gameplay."
+	animationspeed(string) : "Animation Speed" : "1.0" : "Set the Speed of your animation. 1.0 = normal, 0.0 - 1.0 is slower, greater than 1 is faster and less or equal to -1 reverses the animation"
+	modelscale(string) : "Model Scale (Game)" : "1.0" : "Set the Model Scale (0.0 - 1.0)"
+	scale(string) : "Model Scale (Editor)" : "1.0" : "Set the Model Scale (0.0 - 1.0)"
+	model(studio) : "Model" : "models/null.mdl" : "Set a Mesh to load into the Game"
+	bbmins(string) : "Collision Volume Mins" : "-16 -16 -16" : "Set the Minuimum Collision position for our Manually set Bounding Volume" 
+	bbmaxs(string) : "Collision Volume Maxs" : "16 16 16" : "Set the Maximum Collision position for our Manually set Bounding Volume"
+	spawnflags(flags) =
+    [
+        1: "Solid?" : 1 : "Enable Collisions?"
+        2: "Debug Bounding Box?" : 0 : "Show a visual representation of the bounding box?"
+        4: "Animate?" : 1 : "Animate the Model?"
+    ]
+    collisionmode(choices) : "Collision Mode" : 2 = 
+	[
+		0: "None" : "No Collisions"
+		1: "Manual Inputs" : "Enter Manual Min and Max values for a Custom Bounding Volume?"
+		2: "Sequence Based" : "Take the Bounding volume from the selected Animation Sequence?"
+	]
+]

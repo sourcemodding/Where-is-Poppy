@@ -200,6 +200,7 @@ call ..\..\filecopy.bat "$(TargetDir)$(TargetName).pdb" "C:\_Projects\Where is P
     <ClCompile Include="..\..\dlls\turret.cpp" />
     <ClCompile Include="..\..\dlls\util.cpp" />
     <ClCompile Include="..\..\dlls\weapons.cpp" />
+    <ClCompile Include="..\..\dlls\wip_static_mesh.cpp" />
     <ClCompile Include="..\..\dlls\world.cpp" />
     <ClCompile Include="..\..\dlls\wpn_shared\hl_wpn_glock.cpp" />
     <ClCompile Include="..\..\dlls\xen.cpp" />
@@ -248,6 +249,7 @@ call ..\..\filecopy.bat "$(TargetDir)$(TargetName).pdb" "C:\_Projects\Where is P
     <ClInclude Include="..\..\dlls\util.h" />
     <ClInclude Include="..\..\dlls\vector.h" />
     <ClInclude Include="..\..\dlls\weapons.h" />
+    <ClInclude Include="..\..\dlls\wip_static_mesh.h" />
     <ClInclude Include="..\..\engine\eiface.h" />
     <ClInclude Include="..\..\pm_shared\pm_debug.h" />
     <ClInclude Include="..\..\pm_shared\pm_defs.h" />

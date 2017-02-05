@@ -544,3 +544,6 @@ int UTIL_SharedRandomLong( unsigned int seed, int low, int high );
 float UTIL_SharedRandomFloat( unsigned int seed, float low, float high );
 
 float UTIL_WeaponTimeBase( void );
+
+// Foo BBox Rendering
+void UTIL_RenderBBox(Vector origin, Vector mins, Vector maxs, int life, BYTE r = 0, BYTE b = 0, BYTE g = 0);
