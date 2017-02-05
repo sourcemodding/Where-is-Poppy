@@ -33,7 +33,7 @@ private:
 		 m_bAnimate = false;
 
 	float m_flAnimationSpeed = 1.0f,
-		  m_fModelScale = 1.0f;
+		  m_flModelScale = 1.0f;
 
 	#define WIP_IS_SOLID 1
 	#define WIP_DEBUG_BB 2

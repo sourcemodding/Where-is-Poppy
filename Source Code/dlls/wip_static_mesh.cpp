@@ -49,8 +49,8 @@ void CStaticMesh::Spawn(void)
  		if (m_iCollisionMode == 1)
 		{
 			// Scale the collision box 
-			mins = mins * m_fModelScale;
-			maxs = maxs * m_fModelScale;
+			mins = mins * m_flModelScale;
+			maxs = maxs * m_flModelScale;
 
 			// Set Collision box Size
 			UTIL_SetSize(pev, mins, maxs);
@@ -61,8 +61,8 @@ void CStaticMesh::Spawn(void)
 			ExtractBbox(m_iSequence, mins, maxs);
 
 			// Sacle the collision box
-			mins = mins * m_fModelScale;
-			maxs = maxs * m_fModelScale;
+			mins = mins * m_flModelScale;
+			maxs = maxs * m_flModelScale;
 
 			// Set Collision box Size
 			UTIL_SetSize(pev, mins, maxs);
@@ -75,7 +75,7 @@ void CStaticMesh::Spawn(void)
 	}
 
 	// Set the visible meshes scale
-	pev->scale = m_fModelScale;
+	pev->scale = m_flModelScale;
 
 	// Check if the User wants to animate
 	if (FBitSet(pev->spawnflags, WIP_ANIMATE))
@@ -141,7 +141,7 @@ void CStaticMesh::KeyValue(KeyValueData *pkvd)
 	// In-Game version of the editor only "scale" keyword
 	else if (FStrEq(pkvd->szKeyName, "modelscale"))
 	{
-		m_fModelScale = atof(pkvd->szValue);
+		m_flModelScale = atof(pkvd->szValue);
 		pkvd->fHandled = TRUE;
 	}
 	// defaults
