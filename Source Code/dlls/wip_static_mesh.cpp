@@ -102,7 +102,7 @@ void CStaticMesh::KeyValue(KeyValueData *pkvd)
 {
 	// Grab the speed our animation plays at
 	// 0.0 here also stops the animation
-	// A netagive value under -1 plays the animation in reverse
+	// A netagive value plays the animation in reverse
 	// A higher value speeds up the animation
 	if (FStrEq(pkvd->szKeyName, "animationspeed"))
 	{

@@ -105,3 +105,4 @@ Source Code/projects/vs2010/Debug/hl_cdll/client.pdb
 Source Code/projects/vs2010/Debug/hl_cdll/int/vc120.pdb
 Source Code/projects/vs2010/Debug/hldll/wip.pdb
 Source Code/projects/vs2010/Debug/hl_cdll/client.lib
+*.max
